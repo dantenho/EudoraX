@@ -1,0 +1,32 @@
+[project]
+name = "eudorax-backend"
+version = "0.1.0"
+description = "Cutting-edge Python backend helpers for AI and computer vision"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+  "numpy>=2.1",
+  "numba>=0.61",
+  "pyarrow>=19.0",
+  "polars>=1.30",
+  "uvloop>=0.21",
+  "tokenizers>=0.21",
+  "transformers>=4.52",
+  "diffusers>=0.34",
+  "opencv-python>=4.11",
+]
+
+[project.optional-dependencies]
+gpu = [
+  "torch>=2.8.0.dev",
+  "vllm>=0.9.0",
+  "realesrgan>=0.3.0",
+]
+
+[tool.ty]
+python = "3.14"
+strict = true
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
