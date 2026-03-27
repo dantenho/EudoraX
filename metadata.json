@@ -1,0 +1,9 @@
+{
+  "name": "EudoraX Ultra v4.5",
+  "description": "Extreme AI Creative Studio featuring Bmm3, eBPF Tuning, and Android Sensor Fusion.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation"
+  ]
+}
